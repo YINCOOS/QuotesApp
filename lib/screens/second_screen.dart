@@ -13,13 +13,19 @@ class SecondScreen extends StatelessWidget {
       child: Scaffold(
           appBar: AppBar(),
           body: Column(children: [
-            Text(
-              quoteText,
-              style: TextStyle(fontSize: 20),
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Text(
+                quoteText,
+                style: TextStyle(fontSize: 20),
+              ),
             ),
-            Text(
-              quoteAuthor,
-              style: TextStyle(fontSize: 20),
+            Align(
+              alignment: Alignment.bottomRight,
+              child: Text(
+                "- $quoteAuthor",
+                style: TextStyle(fontSize: 20),
+              ),
             ),
           ])),
     );
