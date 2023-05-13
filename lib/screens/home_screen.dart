@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 import 'package:quotesapp/screens/second_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -11,7 +12,7 @@ class HomeScreen extends StatelessWidget {
         body: Center(
           child: ElevatedButton(
             onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => SecondScreen()));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => SecondScreen())); 
             },
             child: Text("Go to next Screen"),
           ),
