@@ -41,7 +41,6 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () async {
                 var url = Uri.parse('https://type.fit/api/quotes');
                 var response = await http.get(url);
-                print('Response status: ${response.statusCode}');
                 print('Response body: ${response.body}');
                 var data = jsonDecode(response.body);
 
